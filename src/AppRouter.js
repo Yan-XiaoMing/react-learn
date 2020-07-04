@@ -6,6 +6,11 @@ import ListItem from './ListItem';
 import Learn from './braft-editor/learn';
 import Screen from './Screen';
 import ReactIndex from './react/ReactIndex';
+import {Provider} from 'react-redux';
+import TodoList from './TodoList';
+import TodoIndex from './TodoIndex';
+import Example from './hooks/Example';
+import Counter from './hooks/Counter';
 
 const dataList = [
   {cid: 123, title: '技术胖的个人博客-1'},
@@ -30,8 +35,14 @@ export default function AppRouter() {
         <Route path='/users'>
           <Users/>
         </Route>
-        <Route path='/css'>
-          <Screen/>
+        {/*<Provider store={}>*/}
+        {/*  <Route path='/todoList'>*/}
+        {/*    <TodoIndex/>*/}
+        {/*  </Route>*/}
+        {/*</Provider>*/}
+        <Route path='/hooks'>
+          <Example/>
+          <Counter/>
         </Route>
         <Route path='/'>
           <App/>
@@ -61,6 +72,9 @@ function Nav() {
           </li>
           <li>
             <Link to='/css/'>CSS Learn</Link>
+          </li>
+          <li>
+            <Link to='/hooks/'>Hooks Learn</Link>
           </li>
           {/*<ListLink />*/}
         </ul>
