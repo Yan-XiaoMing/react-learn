@@ -1,4 +1,5 @@
 import ReactDOM from 'react';
+import React from 'react';
 
 /**
  * 在 Web Components 中使用 React
