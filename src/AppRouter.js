@@ -11,6 +11,10 @@ import TodoList from './TodoList';
 import TodoIndex from './TodoIndex';
 import Example from './hooks/Example';
 import Counter from './hooks/Counter';
+import Ex01 from "./redux-learn/ex01/ex01";
+import Folme1 from "./Folmejs/Folme1";
+import FolmeBall from "./Folmejs/FolmeBall";
+import FolReact from "./Folmejs/FolReact";
 
 const dataList = [
   {cid: 123, title: '技术胖的个人博客-1'},
@@ -44,6 +48,14 @@ export default function AppRouter() {
           <Example/>
           <Counter/>
         </Route>
+        <Route path='/redux'>
+          <Ex01/>
+        </Route>
+        <Route path='/folme'>
+          <Folme1/>
+          <FolmeBall/>
+          <FolReact/>
+        </Route>
         <Route path='/'>
           <App/>
         </Route>
@@ -75,6 +87,12 @@ function Nav() {
           </li>
           <li>
             <Link to='/hooks/'>Hooks Learn</Link>
+          </li>
+          <li>
+            <Link to='/redux/'>Redux Learn</Link>
+          </li>
+          <li>
+            <Link to='/folme/'>Folmejs</Link>
           </li>
           {/*<ListLink />*/}
         </ul>
