@@ -33,12 +33,6 @@ export default function AppRouter() {
         <Route path='/inHtml'>
           <Learn/>
         </Route>
-        <Route path='/about'>
-          <About/>
-        </Route>
-        <Route path='/users'>
-          <Users/>
-        </Route>
         {/*<Provider store={}>*/}
         {/*  <Route path='/todoList'>*/}
         {/*    <TodoIndex/>*/}
@@ -74,16 +68,7 @@ function Nav() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/users/">User</Link>
-          </li>
-          <li>
             <Link to='/inHtml/'>Braft Editor</Link>
-          </li>
-          <li>
-            <Link to='/css/'>CSS Learn</Link>
           </li>
           <li>
             <Link to='/hooks/'>Hooks Learn</Link>

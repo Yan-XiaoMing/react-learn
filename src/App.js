@@ -4,15 +4,31 @@ import './style.css';
 import AppItem from './AppItem';
 import ListItem from './ListItem';
 import axios from 'axios'
+import TabBar from "./component/tabBar";
 
+const pushList = [1,2,3,4,5,6]
 class App extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
       inputValue: '',
-      list: ['HTML', 'Js']
+      list: ['HTML', 'Js'],
+
+      oddList:[],
+      evenList:[]
     };
+  }
+  updateList = ()=>{
+    pushList.forEach(item=>{
+      console.log(item)
+      if(item%2==0){
+        this.setState({evenList:this.state.oddList.push(item)})
+      }
+      else{
+        this.setState({oddList:this.state.evenList.push(item)})
+      }
+    })
   }
 
   inputChange = () => {
@@ -43,6 +59,7 @@ class App extends Component {
   // }
 
   componentDidMount() {
+    this.updateList()
     // console.log('componentDidMount----组件挂载完成的时刻执行')
     axios.post('https://web-api.juejin.im/v3/web/wbbr/bgeda')
       .then((res)=>{
@@ -100,7 +117,7 @@ class App extends Component {
           </ul>
         </div>
         <ListItem/>
-
+        <TabBar/>
       </Fragment>
 
     );
