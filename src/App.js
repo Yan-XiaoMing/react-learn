@@ -5,6 +5,7 @@ import AppItem from './AppItem';
 import ListItem from './ListItem';
 import axios from 'axios'
 import TabBar from "./component/tabBar";
+import TimePicker from './component/time-picker'
 
 const pushList = [1,2,3,4,5,6]
 class App extends Component {
@@ -118,6 +119,7 @@ class App extends Component {
         </div>
         <ListItem/>
         <TabBar/>
+        <TimePicker/>
       </Fragment>
 
     );
