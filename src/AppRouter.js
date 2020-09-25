@@ -6,7 +6,9 @@ import ListItem from './ListItem';
 import Learn from './braft-editor/learn';
 import Screen from './Screen';
 import ReactIndex from './react/ReactIndex';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from './redux-learn/usageWithReact/reducers'
 import TodoList from './TodoList';
 import TodoIndex from './TodoIndex';
 import Example from './hooks/Example';
@@ -15,6 +17,8 @@ import Ex01 from "./redux-learn/ex01/ex01";
 import Folme1 from "./Folmejs/Folme1";
 import FolmeBall from "./Folmejs/FolmeBall";
 import FolReact from "./Folmejs/FolReact";
+
+const store = createStore(rootReducer)
 
 const dataList = [
   {cid: 123, title: '技术胖的个人博客-1'},
@@ -51,7 +55,9 @@ export default function AppRouter() {
           <FolReact/>
         </Route>
         <Route path='/'>
-          <App/>
+          <Provider store={store}>
+            <App/>
+          </Provider>
         </Route>
       </Switch>
       <Route path="/list/:id" component={ListComponent}/>

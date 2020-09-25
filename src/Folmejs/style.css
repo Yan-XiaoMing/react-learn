@@ -49,3 +49,20 @@ fol-scroll-view{
   font-size:20px;
   font-family: Apple Color Emoji, Segoe UI, Segoe UI Emoji, Segoe UI Symbol, serif;
 }
+
+.folme-test-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  background: rgba(230, 126, 34,1.0);
+}
+.folme-test-container{
+  width: 100%;
+  height: 200px;
+  background: rgba(0,0,0,0.5);
+  align-items: flex-end;
+}
+.folme-test-hide{
+  flex: 1;
+  background: greenyellow;
+}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {FolPad} from "@folmejs/react";
 import ScrollView from "./components/ScrollView";
 import './style.css'
+import FolmeHooks from './FolmeHooks';
 
 class FolReact extends Component {
   render() {
@@ -12,8 +13,11 @@ class FolReact extends Component {
         }}>
           click me
         </FolPad>
-        <div className='scroll-wrapper'>
-          <ScrollView/>
+        {/*<div className='scroll-wrapper'>*/}
+        {/*  /!*<ScrollView/>*!/*/}
+        {/*</div>*/}
+        <div className='folme-hooks'>
+          <FolmeHooks/>
         </div>
       </>
     );

@@ -1,0 +1,29 @@
+.frosted-glass-wrapper{
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 280px;
+}
+.frosted-glass-content>p{
+  font-size: 26px;
+  font-weight: bold;
+  color: bisque;
+}
+.frosted-glass-content{
+  z-index: 1;
+  position: relative;
+  background: hsla(0,0%,100%,.3);
+}
+.frosted-glass-content::before{
+  background-repeat:no-repeat;
+  background-size:contain
+}
+.frosted-glass-content::before{
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(255,0,0,.3);
+  z-index: -1;
+}
