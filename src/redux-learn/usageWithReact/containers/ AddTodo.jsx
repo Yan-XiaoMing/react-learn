@@ -10,6 +10,7 @@ const AddTodo = ({ dispatch }) => {
         onSubmit={e => {
           e.preventDefault()
           if(!input.value.trim()){
+            input.value = ''
             return
           }
           dispatch(addTodo(input.value))

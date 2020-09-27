@@ -1,5 +1,4 @@
 import {ADD_TODO, TOGGLE_TODO} from '../config/configActionType';
-import {todo} from '../../../redux/reducers';
 
 const todos = (state = [], action) => {
   switch (action.type){
@@ -13,7 +12,11 @@ const todos = (state = [], action) => {
         }
       ]
     case TOGGLE_TODO:
-      return state.map(todo => todo.id === action.id ? { ...todo, completed: !todo.completed } : todo)
+      return state.map((item) => {
+        console.log(item)
+        console.log(action)
+        return item.id === action.id ? { ...item, completed: !item.completed } : item
+      })
     default:
       return state
   }
