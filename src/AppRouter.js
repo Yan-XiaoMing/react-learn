@@ -17,9 +17,15 @@ import Ex01 from "./redux-learn/ex01/ex01";
 import Folme1 from "./Folmejs/Folme1";
 import FolmeBall from "./Folmejs/FolmeBall";
 import FolReact from "./Folmejs/FolReact";
+import {counter} from './@guigu/redux-todo/redux/reducers';
+import GuiGuReduxTodo from './@guigu/redux-todo'
+import CopyMain from './redux-learn/usageWithReactCopy';
 
 const store = createStore(rootReducer)
+const storeGuiGu1 = createStore(counter)
+storeGuiGu1.subscribe(()=>{
 
+})
 const dataList = [
   {cid: 123, title: '技术胖的个人博客-1'},
   {cid: 456, title: '技术胖的个人博客-2'},
@@ -33,6 +39,8 @@ export default function AppRouter() {
       <Switch>
         <Route path='/index'>
           <ReactIndex/>
+          <GuiGuReduxTodo store = {storeGuiGu1} />
+          <CopyMain />
         </Route>
         <Route path='/inHtml'>
           <Learn/>
@@ -83,7 +91,7 @@ function Nav() {
             <Link to='/redux/'>Redux Learn</Link>
           </li>
           <li>
-            <Link to='/folme/'>Folmejs</Link>
+            <Link to='/folm  e/'>Folmejs</Link>
           </li>
           {/*<ListLink />*/}
         </ul>
