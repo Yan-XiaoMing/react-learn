@@ -2,15 +2,11 @@ import React from 'react';
 import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
 import App from './App';
 import ListComponent from './ListComponent';
-import ListItem from './ListItem';
 import Learn from './braft-editor/learn';
-import Screen from './Screen';
 import ReactIndex from './react/ReactIndex';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import rootReducer from './redux-learn/usageWithReact/reducers'
-import TodoList from './TodoList';
-import TodoIndex from './TodoIndex';
 import Example from './hooks/Example';
 import Counter from './hooks/Counter';
 import Ex01 from "./redux-learn/ex01/ex01";
@@ -19,7 +15,7 @@ import FolmeBall from "./Folmejs/FolmeBall";
 import FolReact from "./Folmejs/FolReact";
 import {counter} from './@guigu/redux-todo/redux/reducers';
 import GuiGuReduxTodo from './@guigu/redux-todo'
-import CopyMain from './redux-learn/usageWithReactCopy';
+import HongBao from './zijie/ex01hongbao/hongBao'
 
 const store = createStore(rootReducer)
 const storeGuiGu1 = createStore(counter)
@@ -40,7 +36,7 @@ export default function AppRouter() {
         <Route path='/index'>
           <ReactIndex/>
           <GuiGuReduxTodo store = {storeGuiGu1} />
-          <CopyMain />
+          {/*<CopyMain />*/}
         </Route>
         <Route path='/inHtml'>
           <Learn/>
@@ -61,6 +57,9 @@ export default function AppRouter() {
           <Folme1/>
           <FolmeBall/>
           <FolReact/>
+        </Route>
+        <Route path='/zijie'>
+          <HongBao />
         </Route>
         <Route path='/'>
           <Provider store={store}>

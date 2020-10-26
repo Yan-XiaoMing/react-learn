@@ -1,0 +1,153 @@
+body{
+  margin: 0;
+}
+.red-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.red-container >h1{
+  font-weight: bold;
+}
+.form-item{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.form-item>span:first-child{
+  font-weight: bold;
+  width: 65px;
+}
+.form-item>input{
+  margin-right: 6px;
+}
+.special-span{
+  letter-spacing: 4px;
+}
+.form-btn-wrapper{
+  text-align: center;
+}
+.form-btn-wrapper{
+  margin-top: 30px;
+}
+.form-btn-item{
+  padding: 5px 0;
+  width: 150px;
+  border: none;
+  background: cornflowerblue;
+  color: aliceblue;
+}
+
+.container{
+  width: 100%;
+  position: relative;
+}
+
+.red-item-wrapper{
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 3%;
+  position: absolute;
+  width: 300px;
+  height: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c0392b;
+  margin-bottom: 30px;
+}
+.red-header{
+  text-align: center;
+}
+.red-header>img{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+.user-wrapper{
+  text-align: center;
+}
+.username{
+  margin: 20px 0;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 25px;
+}
+.userto{
+  color: #cc8e35;
+}
+.userhappy{
+  color: whitesmoke;
+}
+.userto ,.userhappy{
+  font-size: 14px;
+  margin-bottom: 13px;
+  font-weight: bold;
+}
+.open-wrapper{
+  z-index: -1;
+  top: 0;
+  position: absolute;
+  width: 200%;
+  background: #ff5252;
+  height: 320px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  border-radius: 0 0 50% 50%;
+}
+.open-btn{
+  width: 100px;
+  height: 100px;
+  background:#ffb142;
+  color: whitesmoke;
+  position: absolute;
+  left: 50%;
+  top: 320px;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  box-shadow: -2px 2px 2px rgba(0,0,0,0.5);
+  text-align: center;
+  line-height: 100px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.opening-btn{
+  transition: 2s;
+  transform: translate(-50%,-50%) rotateY(720deg);
+}
+.opening-wrapper{
+  transition: 1.5s;
+  height: 63px;
+}
+.close-red{
+  position: absolute;
+  font-weight: bolder;
+  font-size: 16px;
+  transform: translateY(-15px);
+  margin-left: 85%;
+}
+
+
+.user-list{
+  width: 180px;
+  height: 200px;
+  border-radius: 10px;
+  text-align: left;
+  padding: 5px 10px;
+  border: 1px solid #ffda79;
+  color: whitesmoke;
+  font-size: 14px;
+}
+.user-list>div{
+  margin-bottom: 5px;
+}
+.user-list>div:last-child{
+  margin-bottom: 0;
+}
+.user-list>div>span:nth-child(2){
+  margin-left: 10px;
+  color: yellow;
+}
