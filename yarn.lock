@@ -1166,35 +1166,6 @@
   resolved "https://registry.npm.taobao.org/@csstools/normalize.css/download/@csstools/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha1-8JULuhiBlRLUL3GX5WxRiqSRzxg=
 
-"@folmejs/components@^1.1.10":
-  version "1.1.10"
-  resolved "http://registry.npm.pt.mi.com/@folmejs/components/download/@folmejs/components-1.1.10.tgz#bb74c042341cd7be5ae1a82e6d71465c304b119c"
-  integrity sha1-u3TAQjQc175a4agubXFGXDBLEZw=
-  dependencies:
-    "@folmejs/core" "^1.1.8"
-    classnames "^2.2.6"
-    deepmerge "^4.2.2"
-    hammerjs "^2.0.8"
-    resize-observer-polyfill "^1.5.1"
-    tua-body-scroll-lock "^1.0.0"
-    workerize "^0.1.8"
-
-"@folmejs/core@^1.1.8":
-  version "1.1.8"
-  resolved "http://registry.npm.pt.mi.com/@folmejs/core/download/@folmejs/core-1.1.8.tgz#59ca920de2ba872b02e495e8800b55a73eee7f15"
-  integrity sha1-WcqSDeK6hysC5JXogAtVpz7ufxU=
-  dependencies:
-    fast-memoize "^2.5.2"
-    style-value-types "^3.1.7"
-    stylefire "^7.0.3"
-
-"@folmejs/react@^1.1.10":
-  version "1.1.10"
-  resolved "http://registry.npm.pt.mi.com/@folmejs/react/download/@folmejs/react-1.1.10.tgz#e4567ca5184e2251bc7b7c9a277f4f197c643308"
-  integrity sha1-5FZ8pRhOIlG8e3yaJ39PGXxkMwg=
-  dependencies:
-    "@folmejs/components" "^1.1.10"
-
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.npm.taobao.org/@hapi/address/download/@hapi/address-2.1.4.tgz?cache=0&sync_timestamp=1593993836406&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Faddress%2Fdownload%2F%40hapi%2Faddress-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -1385,16 +1356,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@mi/folme@^2.1.6":
-  version "2.1.6"
-  resolved "http://registry.npm.pt.mi.com/@mi/folme/download/@mi/folme-2.1.6.tgz#6af924668ef65acac3d03a7ef0def87d120fa546"
-  integrity sha1-avkkZo72WsrD0Dp+8N74fRIPpUY=
-  dependencies:
-    deepmerge "^4.2.2"
-    hammerjs "^2.0.8"
-    resize-observer-polyfill "^1.5.1"
-    tinycolor2 "^1.4.1"
-
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/@mrmlnc/readdir-enhanced/download/@mrmlnc/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -1407,22 +1368,6 @@
   version "1.1.3"
   resolved "https://registry.npm.taobao.org/@nodelib/fs.stat/download/@nodelib/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha1-K1o6s/kYzKSKjHVMCBaOPwPrphs=
-
-"@popmotion/easing@^1.0.1":
-  version "1.0.2"
-  resolved "http://registry.npm.pt.mi.com/@popmotion/easing/download/@popmotion/easing-1.0.2.tgz#17d925c45b4bf44189e5a38038d149df42d8c0b4"
-  integrity sha1-F9klxFtL9EGJ5aOAONFJ30LYwLQ=
-
-"@popmotion/popcorn@^0.4.4":
-  version "0.4.4"
-  resolved "http://registry.npm.pt.mi.com/@popmotion/popcorn/download/@popmotion/popcorn-0.4.4.tgz#a5f906fccdff84526e3fcb892712d7d8a98d6adc"
-  integrity sha1-pfkG/M3/hFJuP8uJJxLX2KmNatw=
-  dependencies:
-    "@popmotion/easing" "^1.0.1"
-    framesync "^4.0.1"
-    hey-listen "^1.0.8"
-    style-value-types "^3.1.7"
-    tslib "^1.10.0"
 
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.3"
@@ -3885,11 +3830,6 @@ deep-is@~0.1.3:
   resolved "https://registry.npm.taobao.org/deep-is/download/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
 
-deepmerge@^4.2.2:
-  version "4.2.2"
-  resolved "http://registry.npm.pt.mi.com/deepmerge/download/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
-  integrity sha1-RNLqNnm49NT/ujPwPYZfwee/SVU=
-
 default-gateway@^4.2.0:
   version "4.2.0"
   resolved "https://registry.npm.taobao.org/default-gateway/download/default-gateway-4.2.0.tgz?cache=0&sync_timestamp=1590419212936&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdefault-gateway%2Fdownload%2Fdefault-gateway-4.2.0.tgz#167104c7500c2115f6dd69b0a536bb8ed720552b"
@@ -4804,11 +4744,6 @@ fast-levenshtein@~2.0.6:
   resolved "https://registry.npm.taobao.org/fast-levenshtein/download/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
-fast-memoize@^2.5.2:
-  version "2.5.2"
-  resolved "http://registry.npm.pt.mi.com/fast-memoize/download/fast-memoize-2.5.2.tgz#79e3bb6a4ec867ea40ba0e7146816f6cdce9b57e"
-  integrity sha1-eeO7ak7IZ+pAug5xRoFvbNzptX4=
-
 faye-websocket@^0.10.0:
   version "0.10.0"
   resolved "https://registry.npm.taobao.org/faye-websocket/download/faye-websocket-0.10.0.tgz#4e492f8d04dfb6f89003507f6edbf2d501e7c6f4"
@@ -5063,14 +4998,6 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framesync@^4.0.0, framesync@^4.0.1:
-  version "4.0.4"
-  resolved "http://registry.npm.pt.mi.com/framesync/download/framesync-4.0.4.tgz#79c42c0118f26821c078570db0ff81fb863516a2"
-  integrity sha1-ecQsARjyaCHAeFcNsP+B+4Y1FqI=
-  dependencies:
-    hey-listen "^1.0.8"
-    tslib "^1.10.0"
-
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.npm.taobao.org/fresh/download/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
@@ -5302,11 +5229,6 @@ gzip-size@5.1.1:
     duplexer "^0.1.1"
     pify "^4.0.1"
 
-hammerjs@^2.0.8:
-  version "2.0.8"
-  resolved "http://registry.npm.pt.mi.com/hammerjs/download/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
-  integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
-
 handle-thing@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npm.taobao.org/handle-thing/download/handle-thing-2.0.1.tgz#857f79ce359580c340d43081cc648970d0bb234e"
@@ -5416,11 +5338,6 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/hex-color-regex/download/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha1-TAb8y0YC/iYCs8k9+C1+fb8aio4=
-
-hey-listen@^1.0.8:
-  version "1.0.8"
-  resolved "http://registry.npm.pt.mi.com/hey-listen/download/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
-  integrity sha1-jllWH/ckkI3hqpJO1uzISlapqmg=
 
 history@^4.9.0:
   version "4.10.1"
@@ -10839,25 +10756,6 @@ style-loader@0.23.1:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
 
-style-value-types@^3.1.7:
-  version "3.1.7"
-  resolved "http://registry.npm.pt.mi.com/style-value-types/download/style-value-types-3.1.7.tgz#3d7d3cf9cb9f9ee86c00e19ba65d6a181a0db33a"
-  integrity sha1-PX08+cufnuhsAOGbpl1qGBoNszo=
-  dependencies:
-    hey-listen "^1.0.8"
-    tslib "^1.10.0"
-
-stylefire@^7.0.3:
-  version "7.0.3"
-  resolved "http://registry.npm.pt.mi.com/stylefire/download/stylefire-7.0.3.tgz#9120ecbb084111788e0ddaa04074799750f20d1d"
-  integrity sha1-kSDsuwhBEXiODdqgQHR5l1DyDR0=
-  dependencies:
-    "@popmotion/popcorn" "^0.4.4"
-    framesync "^4.0.0"
-    hey-listen "^1.0.8"
-    style-value-types "^3.1.7"
-    tslib "^1.10.0"
-
 stylehacks@^4.0.0:
   version "4.0.3"
   resolved "https://registry.npm.taobao.org/stylehacks/download/stylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
@@ -11151,11 +11049,6 @@ tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.npm.taobao.org/tty-browserify/download/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
   integrity sha1-oVe6QC2iTpv5V/mqadUk7tQpAaY=
-
-tua-body-scroll-lock@^1.0.0:
-  version "1.1.0"
-  resolved "http://registry.npm.pt.mi.com/tua-body-scroll-lock/download/tua-body-scroll-lock-1.1.0.tgz#80343acb08abced5f0cf24630256921beff36bf6"
-  integrity sha1-gDQ6ywirztXwzyRjAlaSG+/za/Y=
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
@@ -11826,11 +11719,6 @@ worker-rpc@^0.1.0:
   integrity sha1-y1Zb1tcHGo8WZgaGBR6WmtMvVNU=
   dependencies:
     microevent.ts "~0.1.1"
-
-workerize@^0.1.8:
-  version "0.1.8"
-  resolved "http://registry.npm.pt.mi.com/workerize/download/workerize-0.1.8.tgz#da4b8090ed31e13bac16fb3e1c5483625e8874fc"
-  integrity sha1-2kuAkO0x4TusFvs+HFSDYl6IdPw=
 
 wrap-ansi@^2.0.0:
   version "2.1.0"
