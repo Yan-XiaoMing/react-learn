@@ -5,10 +5,11 @@ import AppItem from './AppItem';
 import ListItem from './ListItem';
 import axios from 'axios'
 import TabBar from "./component/tabBar";
-import TimePicker from './component/time-picker'
+// import TimePicker from './component/time-picker'
 import FrostedGlass from './component/frostedGlass';
 import {Button} from 'antd';
 import Main from './redux-learn/usageWithReact/components/Main';
+import ContextApp from './contextApi/app'
 
 const pushList = [1,2,3,4,5,6]
 class App extends Component {
@@ -122,12 +123,12 @@ class App extends Component {
         </div>
         <ListItem/>
         <TabBar/>
-        <TimePicker/>
+        {/*<TimePicker/>*/}
         <FrostedGlass />
         {/*<Button onClick={runPureRedux}>Redux Pure</Button>*/}
         <Main />
+        <ContextApp/>
       </Fragment>
-
     );
   }
 }
