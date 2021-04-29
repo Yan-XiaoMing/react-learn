@@ -16,6 +16,7 @@ import FolReact from "./Folmejs/FolReact";
 import {counter} from './@guigu/redux-todo/redux/reducers';
 import GuiGuReduxTodo from './@guigu/redux-todo'
 import HongBao from './zijie/ex01hongbao/hongBao'
+import FirstStart from "./antv-learn/start/firstStart";
 
 const store = createStore(rootReducer)
 const storeGuiGu1 = createStore(counter)
@@ -61,6 +62,9 @@ export default function AppRouter() {
         <Route path='/zijie'>
           <HongBao />
         </Route>
+        <Route path='/x6'>
+          <FirstStart/>
+        </Route>
         <Route path='/'>
           <Provider store={store}>
             <App/>
@@ -90,7 +94,10 @@ function Nav() {
             <Link to='/redux/'>Redux Learn</Link>
           </li>
           <li>
-            <Link to='/folm  e/'>Folmejs</Link>
+            <Link to='/folme/'>Folmejs</Link>
+          </li>
+          <li>
+            <Link to='/x6/'>x6</Link>
           </li>
           {/*<ListLink />*/}
         </ul>
