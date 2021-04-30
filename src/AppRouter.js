@@ -17,6 +17,7 @@ import {counter} from './@guigu/redux-todo/redux/reducers';
 import GuiGuReduxTodo from './@guigu/redux-todo'
 import HongBao from './zijie/ex01hongbao/hongBao'
 import FirstStart from "./antv-learn/start/firstStart";
+import Draw from "./antv-learn/draw";
 
 const store = createStore(rootReducer)
 const storeGuiGu1 = createStore(counter)
@@ -63,7 +64,8 @@ export default function AppRouter() {
           <HongBao />
         </Route>
         <Route path='/x6'>
-          <FirstStart/>
+          <Draw />
+          {/*<FirstStart/>*/}
         </Route>
         <Route path='/'>
           <Provider store={store}>

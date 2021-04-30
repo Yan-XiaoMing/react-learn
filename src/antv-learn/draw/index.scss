@@ -1,0 +1,19 @@
+.draw-header{
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid rgba(0,0,0,.8);
+}
+.draw-body{
+  display: flex;
+  .sider {
+    position: relative;
+    width: 290px;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  .draw-left{
+    width: 20%;
+  }
+  .draw-canvas{
+    flex: 1;
+  }
+}

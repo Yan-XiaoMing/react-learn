@@ -1,6 +1,6 @@
 // import React, {Component} from 'react';
-// import 'rmc-picker/assets/index.css';
-// import 'rmc-date-picker/assets/index.css';
+// import 'rmc-picker/assets/index.scss';
+// import 'rmc-date-picker/assets/index.scss';
 // import 'rmc-picker/assets/popup.css';
 // import './style.css'
 // import DatePicker from "rmc-date-picker";
